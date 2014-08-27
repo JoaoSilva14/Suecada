@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cards"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.suecada.Sueca" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTotal"
+        android:layout_alignLeft="@+id/nPNos"
+        android:layout_alignRight="@+id/btnBloquear"
+        android:layout_below="@+id/nPNos"
+        android:scrollbars="vertical" >
+
+        <TableLayout
+            android:id="@+id/tLPontos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nPVos"
+        android:layout_alignParentTop="true"
+        android:text="@string/vos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nPNos"
+        android:layout_alignParentTop="true"
+        android:text="@string/nos"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <NumberPicker
+        android:id="@+id/nPVos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ScrollView01"
+        android:layout_below="@+id/tvJ2" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnAnular"
+        android:onClick="reiniciar"
+        android:text="@string/reiniciar" />
+
+    <Button
+        android:id="@+id/btnAnular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="anular"
+        android:text="@string/anular" />
+
+    <Button
+        android:id="@+id/btnBloquear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnAnular"
+        android:onClick="tabela"
+        android:text="@string/registar" />
+
+    <TextView
+        android:id="@+id/tvTotalVos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTotalNos"
+        android:layout_alignBottom="@+id/tvTotalNos"
+        android:layout_alignLeft="@+id/nPVos"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTotalNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnReiniciar"
+        android:layout_marginBottom="14dp"
+        android:layout_toRightOf="@+id/tvJ1"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <NumberPicker
+        android:id="@+id/nPNos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/nPVos"
+        android:layout_marginLeft="14dp"
+        android:onClick="teste" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTotalNos"
+        android:layout_alignRight="@+id/tvJ1"
+        android:text="@string/total"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

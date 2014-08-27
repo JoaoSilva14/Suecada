@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Suecada</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sueca">Sueca</string>
+    <string name="italiana">Sueca Italiana</string>
+    <string name="title_activity_sueca">Sueca</string>
+    <string name="title_activity_italiana">Sueca Italiana</string>
+    <string name="nos">Nós</string>
+    <string name="vos">Vós</string>
+    <string name="mais">+</string>
+    <string name="menos">-</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="bloquear">Bloquear</string>
+    <string name="anular">Anular</string>
+    <string name="jogadores">Escolher Jogadores:</string>
+    <string name="jogador1">Jogador 1</string>
+    <string name="jogador2">Jogador 2</string>
+    <string name="jogador3">Jogador 3</string>
+    <string name="jogador4">Jogador 4</string>
+    <string name="jogador5">Jogador 5</string>
+    <string name="seguinte">Seguinte</string>
+    <string name="title_activity_italiana_pontos">Sueca Italiana</string>
+    <string name="registar">Registar</string>
+    <string name="title_activity_emconstrucao">Emconstrucao</string>
+    <string name="total">Total:</string>
+    <string name="zero">0</string>
+    <string name="vazio">\"\"</string>
+    <string name="iniciais">Escolher Iniciais de Jogadores</string>
+    <string name="menosum">-1</string>
+    <string name="menosdois">-2</string>
+    <string name="menosquatro">-4</string>
+    <string name="maisum">+1</string>
+    <string name="maisdois">+2</string>
+    <string name="maisquatro">+4</string>
+    <string name="nomes">Escolher Nomes dos Jogadores</string>
+
+</resources>
